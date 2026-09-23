@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#635bff"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="data:,">
 <meta name="description" content="ATS Resume Checker - analyze a resume against a job description."><title>ATS Resume Checker</title>
 <link rel="stylesheet" href="styles.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script></head>
+</head>
 <body>
 <header class="topbar"><div class="brand"><span class="mark">✓</span> ATS Resume Checker</div><span class="badge">Free • Client-side</span></header>
 <main class="container">
@@ -27,4 +27,4 @@
 <div class="card"><div class="title"><h2>Extracted Resume Text</h2><button id="copyBtn" class="ghost">Copy</button></div><pre id="extractedText"></pre></div>
 </section>
 <div class="privacy"><strong>Privacy first.</strong> Analysis runs in your browser; your resume is not sent to a server.</div>
-</main><footer>ATS Resume Checker • HTML • CSS • JavaScript</footer><script src="app.js"></script></body></html>
+</main><footer>ATS Resume Checker • HTML • CSS • JavaScript</footer><script src="app.js"></script><script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js"))}</script></body></html>
